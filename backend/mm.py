@@ -4,7 +4,7 @@ from decimal import Decimal
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-API_BASE = "http://localhost:5000"
+API_BASE = "85.208.87.192:5001"
 TOKENS = ["BTC", "ETH", "TON", "TRX"]
 BASE_CURRENCY = "USDT"
 ORDERS_PER_TOKEN = 10

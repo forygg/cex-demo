@@ -11,7 +11,7 @@ from sqlalchemy import PrimaryKeyConstraint
 from sqlalchemy import Sequence
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000'])
+CORS(app, origins=['http://85.208.87.192:3001'])
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:innokek@localhost/cex'
 app.config['JWT_SECRET_KEY'] = secrets.token_hex(32)
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = False
