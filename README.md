@@ -30,9 +30,9 @@ Welcome to the **CEX Platform**, a cryptocurrency exchange platform designed for
 
 ---
 
-## 🏗 System Architecture
+## 🏗 Diagram
 
-![Architecture Diagram](https://link-to-architecture-diagram-image)
+[![diagram](https://s.iimg.su/s/18/ipKOdGZ0PL86Ixy7ek1jY8MBYZzSP4lKnW1E6EeJ.png)](https://iimg.su/i/ujTYP)
 
 **Key Components**:
 1. **Frontend**: React.js for dynamic user interface.
