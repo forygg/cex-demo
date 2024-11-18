@@ -17,7 +17,7 @@ const PlaceOrder = ({ selectedCurrency, onSuccess }) => {
       if (!authToken) return;
 
       try {
-        const response = await axios.get('http://localhost:5000/wallets', {
+        const response = await axios.get('http://85.208.87.192:5001/wallets', {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },
@@ -45,7 +45,7 @@ const PlaceOrder = ({ selectedCurrency, onSuccess }) => {
     try {
       console.log(selectedCurrency);
       await axios.post(
-        'http://localhost:5000/order',
+        'http://85.208.87.192:5001/order',
         {
           order_type: orderType,
           currency: selectedCurrency.toUpperCase(),

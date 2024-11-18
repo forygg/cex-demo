@@ -20,7 +20,7 @@ const Wallets = () => {
             if (!authToken) {
                 navigate("/login");
             }
-            const response = await axios.get('http://localhost:5000/wallets', {
+            const response = await axios.get('http://85.208.87.192:5001/wallets', {
                 headers: { Authorization: `Bearer ${authToken}` },
             });
             const walletsData = response.data;

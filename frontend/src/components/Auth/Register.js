@@ -21,7 +21,7 @@ const Register = () => {
       setLoading(true);
       setError('');
       try {
-        const response = await axios.post('http://localhost:5000/register', {
+        const response = await axios.post('http://85.208.87.192:5001/register', {
           username,
           password,
           email,

@@ -18,7 +18,7 @@ const Orders = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/orders', {
+                const response = await axios.get('http://85.208.87.192:5001/orders', {
                     headers: { Authorization: `Bearer ${authToken}` },
                 });
                 const filteredOrders = response.data.filter(order => order.currency === selectedCurrency);
@@ -33,7 +33,7 @@ const Orders = () => {
 
         const fetchTransactionHistory = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/transactions', {
+                const response = await axios.get('http://85.208.87.192:5001/transactions', {
                     headers: { Authorization: `Bearer ${authToken}` },
                 });
                 const filteredTransactions = response.data.filter(transaction => transaction.currency === selectedCurrency);
@@ -53,7 +53,7 @@ const Orders = () => {
 
     const handleDeleteOrder = async (orderId) => {
         try {
-            await axios.delete(`http://localhost:5000/order/${orderId}`, {
+            await axios.delete(`http://85.208.87.192:5001/order/${orderId}`, {
                 headers: { Authorization: `Bearer ${authToken}` },
             });
             setOrders(orders.filter((order) => order.id !== orderId));

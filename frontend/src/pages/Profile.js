@@ -22,7 +22,7 @@ const Profile = () => {
             }
 
             try {
-                const response = await axios.get('http://localhost:5000/profile', {
+                const response = await axios.get('http://85.208.87.192:5001/profile', {
                     headers: {
                         Authorization: `Bearer ${authToken}`,
                     },

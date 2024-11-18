@@ -8,7 +8,7 @@ const OrderBook = ({ selectedCurrency }) => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/orderbook');
+        const response = await axios.get('http://85.208.87.192:5001/orderbook');
         const filteredBuyOrders = response.data.buy_orders.filter(
           (order) => order.currency === selectedCurrency
         );
